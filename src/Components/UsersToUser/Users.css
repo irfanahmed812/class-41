@@ -1,0 +1,44 @@
+.users {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+}
+
+.user {
+    padding: 20px;
+    border: 2px solid orange;
+    border-radius: 8px;
+}
+
+.det a {
+    color: black;
+    text-decoration: none;
+}
+
+.det a:hover {
+    color: white;
+}
+
+/* user details */
+
+.user-details {
+    border: 2px solid orange;
+    border-radius: 8px;
+    width: 410px;
+    padding: 24px;
+}
+
+.username {
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    .users {
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 25px;
+    }
+
+    .user {
+        padding: 15px;
+    }
+}
